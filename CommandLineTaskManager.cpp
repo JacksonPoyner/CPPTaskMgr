@@ -1,6 +1,17 @@
 #include <iostream>
 #include <string>
+#include <vector>
 
+int main()
+{
+    int userChoice;
+    std::cout << "Welcome to my task manager program!" << "\n"
+              << "In this program you can create and complete tasks as you please." << "\n";
+    std::cout << "What would you like to do?" << "\n";
+    std::cin >> userChoice;
+
+    return 0;
+}
 /**
  * This is a task class that will create an object class with a name, description,
  * and a boolean that controls whether the task is complete or not.
@@ -26,6 +37,7 @@ public:
 class TaskManager
 {
 public:
+    // A method for creating new incomplete tasks.
     void createTask()
     {
         std::string name;
@@ -39,10 +51,5 @@ public:
         std::cin >> description;
 
         Task task(name, description, false);
-    }
-
-    void completeTask(Task task)
-    {
-        task(name, description, true);
     }
 };
