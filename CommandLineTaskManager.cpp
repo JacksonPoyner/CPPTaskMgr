@@ -5,10 +5,34 @@
 int main()
 {
     int userChoice;
+    std::vector<Task> taskVector;
     std::cout << "Welcome to my task manager program!" << "\n"
               << "In this program you can create and complete tasks as you please." << "\n";
     std::cout << "What would you like to do?" << "\n";
+    std::cout << "0. Create task" << "\n"
+              << "1. List tasks" << "\n"
+              << "2. Complete task" << "\n"
+              << "3. Delete task" << "\n"
+              << "4. Quit" << "\n";
     std::cin >> userChoice;
+    if (userChoice == 0)
+    {
+    }
+    else if (userChoice == 1)
+    {
+    }
+    else if (userChoice == 2)
+    {
+    }
+    else if (userChoice == 3)
+    {
+    }
+    else if (userChoice == 4)
+    {
+    }
+    else
+    {
+    }
 
     return 0;
 }
@@ -51,5 +75,9 @@ public:
         std::cin >> description;
 
         Task task(name, description, false);
+    }
+    // A method for deleting tasks.
+    void deleteTask()
+    {
     }
 };
