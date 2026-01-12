@@ -105,7 +105,7 @@ int main() {
         std::cout << "0. No sort." << "\n"
                   << "1. Incomplete tasks." << "\n"
                   << "2. Complete tasks." << "\n"
-                  << "3. Nevermind." << "\n";
+                  << "3. Never mind." << "\n";
         std::cin >> listChoice;
 
         if (listChoice == 0) {
